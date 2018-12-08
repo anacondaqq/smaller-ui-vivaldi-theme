@@ -1,1 +1,17 @@
 /*my preferences*/
+
+/*macOS/Safari like color scheme*/
+#main > div.toolbar-addressbar.toolbar{
+    background: linear-gradient(to top, #cccccc 0%, #d6d6d6 1px, #ebebeb 100%);
+}
+
+/* Hide the tab trash bin in private mode */
+.private .toggle-trash {
+  display: none;
+}
+
+/*.toolbar-addressbar.toolbar*/
+.tab-position .tab {transform: skewX(-25deg);}
+.tab-position .tab .tab-header {transform: skewX(25deg);}
+
+
