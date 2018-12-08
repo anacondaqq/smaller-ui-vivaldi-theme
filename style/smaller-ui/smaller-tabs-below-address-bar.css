@@ -1,0 +1,130 @@
+#main{
+    z-index: inherit;
+}
+.addressfield {
+    max-width: 50vw;
+    border-width: 0 0 0 0;
+    max-height: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.addressfield .addressfield-siteinfo{
+    height: 18px;
+}
+.addressfield .addressfield-siteinfo .siteinfo-symbol{
+    height: 18px;
+    width: 18px;
+}
+.addressfield .addressfield-siteinfo .siteinfo-symbol svg{
+    /*margin-top: 1px;*/
+    height: 18px;
+    width: 18px;
+    padding: 0 0 0 0;
+}
+.addressfield .addressfield-siteinfo .siteinfo-text{
+    margin: 0 0 0 0;
+}
+.addressfield form input.url{
+    /*margin-top: -1px;*/
+    max-height: 18px;
+    font-size: 13px;
+    vertical-align:top;
+    text-align: center;
+    padding: 0 6px 0 6px;
+    line-height: 13px;
+}
+button.button-addressfield{
+    /*padding: 0 0 0 0 ;*/
+    height: 18px;
+}
+.addressfield .add-bookmark-container{
+    margin-top: -1px;
+}
+
+#tabs-container .toggle-trash, #tabs-container .synced-tabs-button, #tabs-container .newtab{
+    min-height: 22px;
+}
+.button-tabbar{
+    height: 22px;
+}
+#tabs-container > div.sync-and-trash-container > div > button > svg{
+/*margin-top: 6px;*/
+padding-bottom: 0;
+max-height: 22px;
+}
+/* Trash can right spacing*/
+.win10 #tabs-container.top,.win #tabs-container.top, #tabs-container.top,.mac #tabs-container.top,.linux #tabs-container.top{
+    padding-right: 0;
+}
+
+/* Toolbar buttons fix*/
+.toolbar .button-toolbar {
+    margin-top: 0;
+}
+#browser.address-top.tabs-top .vivaldi, #browser.address-top.tabs-off .vivaldi{
+    padding-top: 0;
+}
+
+/* Address Bar on Top*/
+#browser.address-top.tabs-top #titlebar,
+#browser.address-top.tabs-off #titlebar {
+    z-index: 1;
+}
+
+/*!*menu bar button*!*/
+#browser.address-top.tabs-top .vivaldi,
+#browser.address-top.tabs-top #header #titlebar .window-buttongroup button:not(.vivaldi),
+#browser.address-top.tabs-off .vivaldi,
+#browser.address-top.tabs-off #header #titlebar .window-buttongroup button:not(.vivaldi) {
+    height: 20px!important;
+    vertical-align: center;
+    /*width: 20px!important;*/
+    max-width: 22px;
+    max-height: 20px;
+    margin-top: -1px;
+}
+#browser.address-top.tabs-top #titlebar #pagetitle,
+#browser.address-top.tabs-off #titlebar #pagetitle {
+    display: none;
+}
+#browser.address-top.tabs-top #tabs-container.top {
+    top: 20px;
+    /*top: 28px;*/
+    padding-left: 0;
+    /*padding-right: 4px;*/
+    position: relative;
+    padding-top: 0;
+}
+#browser.address-top.tabs-top .tab-position .tab .tab-header{
+    z-index: inherit;
+}
+
+#browser.address-top.tabs-top #main {
+    /*free space at top */
+    margin-top: -23px;
+}
+#browser.address-top.tabs-off #main {
+    margin-top: -23px;
+}
+#browser.address-top.tabs-top .toolbar-addressbar {
+    padding: 0 80px 24px 32px;
+}
+#browser.address-top.tabs-off .toolbar-addressbar {
+    padding: 0 80px 0 32px;
+}
+
+#browser.address-top.tabs-top #tabs-container.top {
+    z-index: inherit;
+}
+.urlSearch, .dialog-add-bookmark, .extensionaction {
+     z-index: 999;
+ }
+.window-buttongroup {
+    z-index: 1;
+}
+#tabs-container .sync-and-trash-container{
+    z-index: 1;
+}
+.extension-popup{
+    z-index: 2;
+}

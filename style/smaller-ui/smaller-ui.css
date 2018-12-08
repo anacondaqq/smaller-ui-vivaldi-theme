@@ -1,0 +1,124 @@
+/*Set Tab height*/
+#header{
+    min-height: 20px;
+}
+#tabs-container{
+    padding-top: 0;
+    max-height: 23px;
+    z-index: -1;
+}
+#tabs-container.top {
+    padding-top: 0;
+}
+.win10.normal #tabs-container.top{
+    padding-top: 0;
+}
+
+/*Vertical Align new tab button*/
+.tab-strip {
+    display: flex;
+    min-height: 23px;
+    max-height: 23px;
+}
+
+/*# take care of stacks specific values*/
+.stacks-on .tab-strip .tab .tab-group-indicator{
+    margin-top: 7px;
+}
+.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator{
+    border-top-width: 0;
+    border-bottom-width: 4px;
+    height: 8px;
+}
+.stacks-on .tab-strip .tab .tab-group-indicator .tab-indicator.active{
+    height: 4px;
+}
+
+/*# tab icon and text*/
+.tab-position {
+    position: relative;
+    left: 0 !important;
+}
+.tab-position .tab{
+    min-height: 23px;
+    max-height: 2px;
+    padding-top: 3px;
+}
+
+.tab-position .tab .tab-header{
+    margin-top: 1px;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-height: 18px;
+}
+#tabs-container .toggle-trash, #tabs-container .synced-tabs-button, #tabs-container .newtab{
+    min-height: 24px;
+    height: 24px;
+}
+#tabs-container .newtab{
+    margin-top: 4px;
+}
+
+/* Title bar's menu button*/
+#browser.address-top.tabs-top .vivaldi,
+#browser.address-top.tabs-off .vivaldi{
+    width: 25px;
+    height: 25px!important;
+    vertical-align: center;
+    max-width: 24px;
+    max-height: 25px;
+    padding: 0 var(--padding) 0 0;
+}
+/*Window min,max,close buttons*/
+#browser.address-top.tabs-top #header #titlebar .window-buttongroup button:not(.vivaldi),
+#browser.address-top.tabs-off #header #titlebar .window-buttongroup button:not(.vivaldi) {
+    width: 24px;
+    height: 25px!important;
+    max-width: 24px;
+    max-height: 25px;
+}
+.win10 #tabs-container.top,.win #tabs-container.top, #tabs-container.top {
+    padding-right: 70px;
+}
+
+
+/* Address bar*/
+.addressfield {
+    margin: 0 auto !important;
+    border-width: 0 0 0 0;
+    max-height: 24px;
+    max-width: 70vw;
+}
+
+.toolbar .button-toolbar{ /*affects buttons in other pages as well*/
+    margin-top: 2px;
+    min-width: 22px;
+    min-height: 18px;
+    height: 20px;
+}
+.button-toolbar span.buttontext{ /*fixes issues in pages like bookmarks*/
+    margin-top: auto;
+}
+.toolbar .button-toolbar > svg {
+    max-height: 20px;
+}
+.toolbar .button-toolbar.reload > span > svg{
+    max-height: 20px;
+}
+
+/*Reduce size of badge icons in extension buttons*/
+.button-badge{
+    padding: 0 0 0 0;
+    border-width: 0 0 0 0;
+    min-width: 8px;
+    min-height: 8px;
+    width: calc(var(--fontSize) - 2px);
+    height: calc(var(--fontSize) - 2px);
+}
+/* Fix colors demarcating the inner end of address/tab bar*/
+.color-behind-tabs-off.address-top .toolbar-addressbar:after, .color-behind-tabs-off.address-top .toolbar-mailbar:after {
+    background-color: var(--colorAccentBg);
+}
+.address-top .toolbar-addressbar:after, .address-top .toolbar-mailbar:after{
+    background-color: var(--colorAccentBg);
+}
